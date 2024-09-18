@@ -1,0 +1,5 @@
+`clientes` (`id`, `nome`, `nascimento`, `sexo`, `peso`, `altura`, `nacionalidade`) VALUES
+
+(13, 'Carol', '1995-03-21', 'F', 68.50, 1.67, 'Brasil'),
+(23, 'Maria da graça', '1988-05-13', 'F', 57.00, 1.55, 'Australia'),
+(31,'Juliana','1985','F',56.00,1.65, 'Brasil'),

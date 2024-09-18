@@ -1,0 +1,9 @@
+function generatepassword(){
+    alert("SENHA GERADA COM SUCESSO!")
+}
+
+console.log(pass);
+
+  containerpassword.classList.remove(hide);
+   password.innerHTML = pass;
+}

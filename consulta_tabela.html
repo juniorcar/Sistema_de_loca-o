@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #myInput {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #80858c;
+        margin-bottom: 12px;
+      }
+
+      #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #f3f3f3;
+        font-size: 18px;
+      }
+
+      #myTable th, #myTable td {
+        text-align: left;
+        padding: 12px;
+      }
+
+      #myTable tr {
+        border-bottom: 1px solid #675f5f;
+      }
+
+      #myTable tr.header, #myTable tr:hover {
+        background-color: #e6e6e611;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>Teste de consulta</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquisar unidade" title="Type in a name">
+
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:60%;">CLIENTE</th>
+        <th style="width:40%;">CONTATO</th>
+        <th style="width:40%;">SEXO</th>
+        <th style="width:40%;">IDADE</th>
+        <th style="width:40%;">TIPO IMOVEL</th>
+        <th style="width:40%;">QUITADO</th>
+      </tr>
+      <tr>
+        <td>JOÃO</td>
+        <td>(47)98848-5522</td>
+        <td>M</td>
+        <td>30</td>
+        <td>APARTAMENTO</td>
+        <td>SIM</td>
+      </tr>
+      <tr>
+        <td>MARIA DA GRAÇA</td>
+        <td>(47)999485500</td>
+        <td>F</td>
+        <td>30</td>
+        <td>APARTAMENTO</td>
+        <td>SIM</td>
+      </tr>
+      <tr>
+        <td>CAROL</td>
+        <td>(47)999485500</td>
+        <td>F</td>
+        <td>29</td>
+        <td>APARTAMENTO</td>
+        <td>SIM</td>
+      </tr>
+      <tr>
+        <td>CAROLINE</td>
+        <td>(47)999485500</td>
+        <td>F</td>
+        <td>30</td>
+        <td>APARTAMENTO</td>
+        <td>SIM</td>
+      </tr>
+      <tr>
+        <td>JULIA</td>
+        <td>(47)99748-5500</td>
+        <td>F</td>
+        <td>22</td>
+        <td>CASA</td>
+        <td>NÃO</td>
+      </tr>
+      <tr>
+        <td>JULIANA</td>
+        <td>(47)99748-5500</td>
+        <td>F</td>
+        <td>22</td>
+        <td>CASA</td>
+        <td>SIM</td>
+      </tr>
+      <tr>
+        <td>JACIARA</td>
+        <td>(47)99748-5500</td>
+        <td>F</td>
+        <td>20</td>
+        <td>CASA</td>
+        <td>SIM</td>
+      </tr>
+      <tr>
+        <td>ROBERTA</td>
+        <td>(47)99748-5500</td>
+        <td>F</td>
+        <td>26</td>
+        <td>CASA</td>
+        <td>SIM</td>
+      </tr>
+
+      <tr>
+        <td>JULIANA</td>
+        <td>(47)99748-5500</td>
+        <td>F</td>
+        <td>22</td>
+        <td>CASA</td>
+        <td>SIM</td>
+      </tr>
+
+      <tr>
+        <td>ANA MARIA</td>
+        <td>(47)99748-550</td>
+        <td>F</td>
+        <td>21</td>
+        <td>CASA</td>
+        <td>NÃO</td>
+      </tr>
+
+      <tr>
+        <td>ANA</td>
+        <td>(47)99748-550</td>
+        <td>F</td>
+        <td>21</td>
+        <td>CASA</td>
+        <td>NÃO</td>
+      </tr>
+
+      <tr>
+        <td>AUGUSTO</td>
+        <td>(47)99748-5500</td>
+        <td>M</td>
+        <td>22</td>
+        <td>TERRENO</td>
+        <td>SIM</td>
+      </tr>
+
+      <tr>
+        <td>CARLOS ALBERTO</td>
+        <td>(47)99748-5500</td>
+        <td>M</td>
+        <td>26</td>
+        <td>CASA</td>
+        <td>SIM</td>
+      </tr>
+
+    </table><br><br>
+
+    <table id="myTable">
+        <tr class="header">
+          <th style="width:60%;">CLIENTE</th>
+          <th style="width:40%;">CONTATO</th>
+          <th style="width:40%;">SEXO</th>
+          <th style="width:40%;">IDADE</th>
+          <th style="width:40%;">TIPO IMOVEL</th>
+          <th style="width:40%;">QUITADO</th>
+        </tr>
+        <tr>
+          <td>JACKSON</td>
+          <td>(47)98848-5522</td>
+          <td>M</td>
+          <td>30</td>
+          <td>APARTAMENTO</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>MARIA ANTÔNIA</td>
+          <td>(47)999485500</td>
+          <td>F</td>
+          <td>30</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>JULIA</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>25</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>JACIRA ANDRADE</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>24</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>ROBERTA</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>28</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>JULIANA </td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>22</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>ANA ROSA</td>
+          <td>(47)99748-550</td>
+          <td>F</td>
+          <td>22</td>
+          <td>APARTAMENTO</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>ANA LUIZA</td>
+          <td>(47)99748-550</td>
+          <td>F</td>
+          <td>20</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>ROBSON BUSS</td>
+          <td>(47)99748-5500</td>
+          <td>M</td>
+          <td>36</td>
+          <td>APARTAMENTO</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>CARLOS LUCAS</td>
+          <td>(47)99748-5500</td>
+          <td>M</td>
+          <td>32</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+      </table><br><br>
+
+      <table id="myTable">
+        <tr class="header">
+          <th style="width:60%;">CLIENTE</th>
+          <th style="width:40%;">CONTATO</th>
+          <th style="width:40%;">SEXO</th>
+          <th style="width:40%;">IDADE</th>
+          <th style="width:40%;">TIPO IMOVEL</th>
+          <th style="width:40%;">QUITADO</th>
+        </tr>
+        <tr>
+          <td>JACKSON JIMENES</td>
+          <td>(47)98848-5522</td>
+          <td>M</td>
+          <td>30</td>
+          <td>APARTAMENTO</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>THAIS TALITA</td>
+          <td>(47)999485500</td>
+          <td>F</td>
+          <td>22</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>JULIA</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>25</td>
+          <td>CASA</td>
+          <td>NÂO</td>
+        </tr>
+        <tr>
+          <td>JOSÈ RAFAEL</td>
+          <td>(47)99748-5500</td>
+          <td>M</td>
+          <td>25</td>
+          <td>CASA</td>
+          <td>NÃO</td>
+        </tr>
+        <tr>
+          <td>MARINA ANDRADE</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>28</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>JULIANA SOARES</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>25</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>ANA ROSA FARIAS</td>
+          <td>(47)99748-550</td>
+          <td>F</td>
+          <td>22</td>
+          <td>APARTAMENTO</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>ANA LUIZA</td>
+          <td>(47)99748-550</td>
+          <td>F</td>
+          <td>20</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>ROBSON SANTOS</td>
+          <td>(47)99748-5500</td>
+          <td>M</td>
+          <td>36</td>
+          <td>APARTAMENTO</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>JOÃO ALBERTO</td>
+          <td>(47)99748-5500</td>
+          <td>M</td>
+          <td>39</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+      </table><br><br>
+
+      <h2>TESTE DE CONSULTA POR NOME DO IMOVEL</h2>
+
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquisar unidade" title="Type in a name">
+  
+      <table id="myTable">
+        <tr class="header">
+          <th style="width:60%;">CLIENTE</th>
+          <th style="width:40%;">CONTATO</th>
+          <th style="width:40%;">SEXO</th>
+          <th style="width:40%;">IDADE</th>
+          <th style="width:40%;">TIPO IMOVEL</th>
+          <th style="width:40%;">QUITADO</th>
+        </tr>
+        <tr>
+          <td>JOÃO</td>
+          <td>(47)98848-5522</td>
+          <td>M</td>
+          <td>30</td>
+          <td>APARTAMENTO</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>MARIA DA GRAÇA</td>
+          <td>(47)999485500</td>
+          <td>F</td>
+          <td>30</td>
+          <td>APARTAMENTO</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>JULIA</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>22</td>
+          <td>CASA</td>
+          <td>NÃO</td>
+        </tr>
+        <tr>
+          <td>JACIARA</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>20</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>ROBERTA</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>26</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>JULIANA</td>
+          <td>(47)99748-5500</td>
+          <td>F</td>
+          <td>22</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>ANA MARIA</td>
+          <td>(47)99748-550</td>
+          <td>F</td>
+          <td>21</td>
+          <td>CASA</td>
+          <td>NÃO</td>
+        </tr>
+  
+        <tr>
+          <td>ANA</td>
+          <td>(47)99748-550</td>
+          <td>F</td>
+          <td>21</td>
+          <td>CASA</td>
+          <td>NÃO</td>
+        </tr>
+  
+        <tr>
+          <td>AUGUSTO</td>
+          <td>(47)99748-5500</td>
+          <td>M</td>
+          <td>22</td>
+          <td>TERRENO</td>
+          <td>SIM</td>
+        </tr>
+  
+        <tr>
+          <td>CARLOS ALBERTO</td>
+          <td>(47)99748-5500</td>
+          <td>M</td>
+          <td>26</td>
+          <td>CASA</td>
+          <td>SIM</td>
+        </tr>
+  
+      </table>
+    <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          t1 = tr[i].getElementsByTagName("td")[0];
+          t2 = tr[i].getElementsByTagName("td")[1];
+          t3 = tr[i].getElementsByTagName("td")[2];
+          t4 = tr[i].getElementsByTagName("td")[3];
+          t5 = tr[i].getElementsByTagName("td")[4];
+          t6 = tr[i].getElementsByTagName("td")[5];
+          if (t1 || t2) {
+            if (t1.innerHTML.toUpperCase().indexOf(filter) > -1 || t2.innerHTML.toUpperCase().indexOf(filter) > -1 ||
+                t3.innerHTML.toUpperCase().indexOf(filter) > -1 ||
+                t4.innerHTML.toUpperCase().indexOf(filter) > -1 || 
+                t5.innerHTML.toUpperCase().indexOf(filter) > -1 ||
+                t6.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }       
+        }
+      }
+    </script>
+
+  </body>
+</html>

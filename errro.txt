@@ -1,0 +1,4 @@
+{
+    containerpassword.classList.remove("hide")
+password.innerHTML = pass;
+}
